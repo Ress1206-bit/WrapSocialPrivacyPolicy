@@ -292,7 +292,7 @@ footer {
 
     .hero-image {
         height: auto;
-        max-height: 400px;
+        max-height: 800px;
     }
 
     .hero-text h2 {
@@ -334,7 +334,7 @@ footer {
     }
 
     .hero-image {
-        max-height: 300px;
+        max-height: 700px;
     }
 
     .nav-links {
