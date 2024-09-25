@@ -217,3 +217,142 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Responsive Styles for iPhone/Smaller Screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust header */
+    header {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        text-align: left; /* Align logo to the left */
+        width: 100%;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+        text-align: left; /* Ensure text aligns to the left */
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        border-top: 1px solid rgb(102, 105, 240);
+    }
+
+    .nav-links li {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* Adjust hero section */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        height: auto;
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Keep column layout for mobile */
+        gap: 15px;
+    }
+
+    .hero-text {
+        order: 1; /* Ensure text comes first */
+        padding: 15px;
+    }
+
+    .app-store-button {
+        width: 100%;
+        padding: 12px 0;
+        order: 2; /* Place button above the image */
+    }
+
+    .hero-image-container {
+        order: 3; /* Place image below the button */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image {
+        height: auto;
+        max-height: 400px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    /* Adjust privacy policy and contact sections */
+    .privacy-section, .contact-section {
+        padding: 15px;
+    }
+
+    .contact-section {
+        height: auto;
+    }
+
+    .form-group {
+        width: 100%;
+        padding-right: 15px; /* Added padding on the right side */
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+
+    .hero-image {
+        max-height: 300px;
+    }
+
+    .nav-links {
+        gap: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .app-store-button {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10
+    }
+}
